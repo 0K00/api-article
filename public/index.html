@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Articles</title>
+
+        <link rel="stylesheet" href="./index.css">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script defer src="./index.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="cols">
+                <div class="col res" id="res"></div>
+            <div class="col">
+            <button class="btn scnd" onclick="handleClick('api/articles/', 'GET')">Get all articles</button>
+                <button class="btn scnd" onclick="openOverlay('getOne', 'GET')">Get one article</button>
+                <button class="btn scnd" onclick="openOverlay('modify', 'PUT')">Modify one article</button>
+                <button class="btn scnd" onclick="openOverlay('create', 'POST')">Create article</button>
+                <button class="btn scnd" onclick="openOverlay('delete', 'DELETE')">Delete one article</button>
+                </div>
+            </div>
+        </div>
+        <div class="overlay" id="overlay"></div>
+    </body>
+</html>

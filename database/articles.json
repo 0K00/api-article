@@ -1,0 +1,7 @@
+{
+    "articles": [{
+        "_id": 0,
+        "title": "Lorem ipsum",
+        "content": "Lorem ipsum"
+    }]
+}
